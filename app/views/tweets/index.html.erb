@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tweets</h1>
+
+<%= render "form", tweet: @tweet %>
+
+<div id="tweets-section">
+  <% @tweets.each do |tweet| %>
+    <%= render tweet %>
+  <% end %>
+</div>
